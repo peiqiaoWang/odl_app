@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>East - flowtable</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-table.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- /.navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span>East </span>Admin</a>
+                <ul class="user-menu">
+                    <li class="dropdown pull-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> 用户 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#"><span class="glyphicon glyphicon-off"></span> 注销</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /sidebar -->
+    <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+        <form role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+        </form>
+        <ul class="nav menu">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 主页</a></li>
+            <li class="active"><a href="user.html"><span class="glyphicon glyphicon-user"></span> 流表</a></li>
+
+            <li role="presentation" class="divider"></li>
+
+        </ul>
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">流表：</div>
+                    <div class="panel-body">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>node</th>
+                                    <th>mac</th>
+                                    <th>port</th>
+                                    <th>...</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>h1</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>h2</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>s1</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="height:15px"></div>
+                        <div class="btn-group" style="float:right">
+                            <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                                      下发流表
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">下发流表</h4>
+                                          </div>
+                                          <div class="modal-body">
+                                            <div class="input-group">
+                                              <span class="input-group-addon">ID</span>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                             <div class="input-group">
+                                              <span class="input-group-addon">Src mac</span>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="input-group">
+                                              <span class="input-group-addon">Src ip</span>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="input-group">
+                                              <span class="input-group-addon">Src TCP</span>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="input-group">
+                                              <span class="input-group-addon">Src UDP</span>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="input-group">
+                                              <span class="input-group-addon">Inport</span>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="input-group">
+                                              <span class="input-group-addon">Outport</span>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="input-group">
+                                              <span class="input-group-addon">Instructions</span>
+                                                    <div class="input-group-add">  
+                                                    </div>  
+                                            </div>
+                                              <div class="input-group">
+                                              <span class="input-group-addon">Priority</span>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            </div>
+                                          
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                            <button type="button" class="btn btn-primary">确定</button>
+                                          </div>
+                                        </div>
+                                        </div>
+                                      </div>
+                                   
+                            <button type="button" class="btn btn-default">功能二</button>
+                            <button type="button" class="btn btn-default">功能三</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/inputGroup-1.1.js"></script>
+    <script>  
+        $(function() {  
+            $('.input-group-add').initInputGroup({  
+                'widget' : 'input', //输入框组中间的空间类型  
+                /*'add' : '添加',  
+                'del' : '删除'*/  
+            });  
+        });  
+    </script> 
+    <script>
+        $(window).on('resize', function () {
+            if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+        })
+        $(window).on('resize', function () {
+            if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+        })
+    </script>
+</body>
+
+</html>
